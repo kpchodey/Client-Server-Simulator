@@ -1,0 +1,65 @@
+2016-08-15 11:16:09 Server initiated and running on port 8220 at localhost
+2016-08-15 11:16:15 Server accepted connection from Client('127.0.0.1', 40642)
+2016-08-15 11:16:15 Request recieved from client  *** Test Cases ***
+2016-08-15 11:16:15 Request recieved from client  Playing from Guide
+2016-08-15 11:16:15 Request recieved from client  Launch Application
+2016-08-15 11:16:15 Request recieved from client  sleep    20s
+2016-08-15 11:16:15 Request recieved from client  ${respon}    callwebsocket    {"command": "CurrentPage.SwitchMainTabs", "params": {"index":1}, "id": 59}
+2016-08-15 11:16:15 Request recieved from client  log    ${respon}
+2016-08-15 11:16:15 Request recieved from client  ${result}=    reponseVerification    ${respon}    handled    true
+2016-08-15 11:16:15 Request recieved from client  log    ${result}
+2016-08-15 11:16:15 Request recieved from client  ${validate}=    reponseValidation    ${respon}    id
+2016-08-15 11:16:15 Request recieved from client  log    ${validate}
+2016-08-15 11:16:15 Request recieved from client  sleep    10s
+2016-08-15 11:16:15 Request recieved from client  ${respon}    callwebsocket    {"command": "CurrentPage.MobileGetHorizontalList", "params": {"index":1}, "id": 52}
+2016-08-15 11:16:15 Request recieved from client  log    ${respon}
+2016-08-15 11:16:15 Request recieved from client  Sleep    3s
+2016-08-15 11:16:15 Request recieved from client  Comment    Click an element    //android.widget.ImageView[contains(@resource-id,'iptv_staggered_images')][0]
+2016-08-15 11:16:15 Request recieved from client  Comment    Appium
+2016-08-15 11:16:15 Request recieved from client  Click an element    //android.widget.ImageView[@bounds='[49,623][694,1106]']
+2016-08-15 11:16:15 Request recieved from client  sleep    3s
+2016-08-15 11:16:15 Request recieved from client  Comment    Appium
+2016-08-15 11:16:15 Request recieved from client  Click an element    //android.widget.Button[@text='Watch']
+2016-08-15 11:16:15 Request recieved from client  sleep    5s
+2016-08-15 11:16:15 Request recieved from client  ${respon}    callwebsocket    {"command": "System.GetSelectedStreamingInfo", "params": {"level":8}, "id":33 }
+2016-08-15 11:16:15 Request recieved from client  ${respon}    callwebsocket    {"command": "CurrentPage.GetCurrentScreen", "params": {}, "id": 78}
+2016-08-15 11:16:15 Request recieved from client  log    ${respon}
+2016-08-15 11:16:15 Request recieved from client  ${result}=    reponseVerification    ${respon}    url    Player Screen
+2016-08-15 11:16:15 Request recieved from client  log    ${result}
+2016-08-15 11:16:15 Request recieved from client  ${validate}=    reponseValidation    ${respon}    id
+2016-08-15 11:16:15 Request recieved from client  log    ${validate}
+2016-08-15 11:16:15 Request recieved from client  Should Be Equal    ${result}    ${True}
+2016-08-15 11:16:15 Received disconnect message. Client got disconnected.
+2016-08-15 11:19:36 Server accepted connection from Client('127.0.0.1', 40648)
+2016-08-15 11:19:36 Request recieved from client  *** Test Cases ***
+2016-08-15 11:19:57 Server accepted connection from Client('127.0.0.1', 40650)
+2016-08-15 11:19:57 Request recieved from client  *** Test Cases ***
+2016-08-15 11:19:57 Request recieved from client  Playing from Guide
+2016-08-15 11:19:57 Request recieved from client  Launch Application
+2016-08-15 11:19:57 Request recieved from client  sleep    20s
+2016-08-15 11:19:57 Request recieved from client  ${respon}    callwebsocket    {"command": "CurrentPage.SwitchMainTabs", "params": {"index":1}, "id": 59}
+2016-08-15 11:19:57 Request recieved from client  log    ${respon}
+2016-08-15 11:19:57 Request recieved from client  ${result}=    reponseVerification    ${respon}    handled    true
+2016-08-15 11:19:57 Request recieved from client  log    ${result}
+2016-08-15 11:19:57 Request recieved from client  ${validate}=    reponseValidation    ${respon}    id
+2016-08-15 11:19:57 Request recieved from client  log    ${validate}
+2016-08-15 11:19:57 Request recieved from client  sleep    10s
+2016-08-15 11:19:57 Request recieved from client  ${respon}    callwebsocket    {"command": "CurrentPage.MobileGetHorizontalList", "params": {"index":1}, "id": 52}
+2016-08-15 11:19:57 Request recieved from client  log    ${respon}
+2016-08-15 11:19:57 Request recieved from client  Sleep    3s
+2016-08-15 11:19:57 Request recieved from client  Comment    Click an element    //android.widget.ImageView[contains(@resource-id,'iptv_staggered_images')][0]
+2016-08-15 11:19:57 Request recieved from client  Comment    Appium
+2016-08-15 11:19:57 Request recieved from client  Click an element    //android.widget.ImageView[@bounds='[49,623][694,1106]']
+2016-08-15 11:19:57 Request recieved from client  sleep    3s
+2016-08-15 11:19:57 Request recieved from client  Comment    Appium
+2016-08-15 11:19:57 Request recieved from client  Click an element    //android.widget.Button[@text='Watch']
+2016-08-15 11:19:57 Request recieved from client  sleep    5s
+2016-08-15 11:19:57 Request recieved from client  ${respon}    callwebsocket    {"command": "System.GetSelectedStreamingInfo", "params": {"level":8}, "id":33 }
+2016-08-15 11:19:57 Request recieved from client  ${respon}    callwebsocket    {"command": "CurrentPage.GetCurrentScreen", "params": {}, "id": 78}
+2016-08-15 11:19:57 Request recieved from client  log    ${respon}
+2016-08-15 11:19:57 Request recieved from client  ${result}=    reponseVerification    ${respon}    url    Player Screen
+2016-08-15 11:19:57 Request recieved from client  log    ${result}
+2016-08-15 11:19:57 Request recieved from client  ${validate}=    reponseValidation    ${respon}    id
+2016-08-15 11:19:57 Request recieved from client  log    ${validate}
+2016-08-15 11:19:57 Request recieved from client  Should Be Equal    ${result}    ${True}
+2016-08-15 11:19:57 Received disconnect message. Client got disconnected.

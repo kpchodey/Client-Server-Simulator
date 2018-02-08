@@ -1,0 +1,31 @@
+*** Test Cases ***
+
+
+Playing from Guide
+    Launch Application   
+    sleep    20s 
+    ${respon}    callwebsocket    {"command": "CurrentPage.SwitchMainTabs", "params": {"index":1}, "id": 59} 
+    log    ${respon}
+    ${result}=    reponseVerification    ${respon}    handled    true 
+    log    ${result} 
+    ${validate}=    reponseValidation    ${respon}    id 
+    log    ${validate} 
+    sleep    10s 
+    ${respon}    callwebsocket    {"command": "CurrentPage.MobileGetHorizontalList", "params": {"index":1}, "id": 52} 
+    log    ${respon}
+    Sleep    3s 
+    Comment    Click an element    //android.widget.ImageView[contains(@resource-id,'iptv_staggered_images')][0] 
+    Comment    Appium
+    Click an element    //android.widget.ImageView[@bounds='[49,623][694,1106]'] 
+    sleep    3s
+    Comment    Appium 
+    Click an element    //android.widget.Button[@text='Watch'] 
+    sleep    5s 
+    ${respon}    callwebsocket    {"command": "System.GetSelectedStreamingInfo", "params": {"level":8}, "id":33 } 
+    ${respon}    callwebsocket    {"command": "CurrentPage.GetCurrentScreen", "params": {}, "id": 78} 
+    log    ${respon} 
+    ${result}=    reponseVerification    ${respon}    url    Player Screen 
+    log    ${result} 
+    ${validate}=    reponseValidation    ${respon}    id 
+    log    ${validate} 
+    Should Be Equal    ${result}    ${True}
