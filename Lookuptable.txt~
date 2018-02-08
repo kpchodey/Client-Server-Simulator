@@ -1,6 +1,0 @@
-${respon}    callwebsocket    {"command": "CurrentPage.SwitchMainTabs", "params": {"index":1}, "id": 59}
-     RESPONSE: {"id":59,"type":"command.response","handled":"true"}
-
-
-
-
